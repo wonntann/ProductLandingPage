@@ -1,7 +1,7 @@
 # freeCodeCamp: Product Landing Page
 
 This repository holds my product landing page for freeCodeCamp's third [basic front end project](https://www.freecodecamp.org/) serving as a product landing page to Simply Chocolate.
-Visit the completed website at: [Product Landing Page](https://wonntann.github.io/)
+Visit the completed website at: [Product Landing Page](https://github.com/)
 
 
 [<img src="">](https://wonntann.github.io/product-landing-page/)
