@@ -8,7 +8,7 @@ Visit the completed website at: [Product Landing Page](https://github.com/)
 
 
 ***
-Another source to play with the code can be viewed at: [CodePen](https://codepen.io/wonntann)
+Another source to play with the code can be viewed at: [CodePen](https://codepen.io/wonntann/pen/RqXyNd)
 
 ***
 # Skills Used
