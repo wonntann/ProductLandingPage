@@ -1,0 +1,212 @@
+html, body {
+  max-height: 100%;
+  max-width: 100%;
+padding: 0px;
+position: relative;
+margin: 0px;
+box-sizing: boarder-box;
+}
+
+.container {
+font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+font-size: 14px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+text-align: center;
+}
+
+section {
+background-color: #f9f9f8;
+padding-top: 120px;
+margin-bottom: 48px;
+}
+
+/* Hero */
+.hero {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://i.ibb.co/CmPYwdR/coffee-Shop.png);
+  background-size: cover;
+  height: 80vh;
+}
+
+.hero-text {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 40px;
+}
+
+.hero-text h2 {
+margin:2% 2% 0px 2%;
+}
+
+#form {
+margin-bottom: 8%;
+}
+
+.btn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: black;
+  background-color: #ff6633;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #FFFFF0;
+}
+
+.btn:hover {
+  background-color: #FFFFF0;
+  color: #555;
+}
+
+input {
+  padding: 10px 25px;
+  width: 27%;
+}
+
+
+/* Header */
+header {
+  background-color: #FFFFF0;
+  width: 100%;
+  position: fixed;
+      bottom: 0;
+      z-index: 1;
+}
+nav {
+  text-transform: uppercase;
+}
+
+nav ul {
+  width: 70%;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.logo {
+  width: 8%;
+  height: auto;
+  left: 5%;
+  position: absolute;
+}
+
+/* About */
+#about {
+    
+}
+
+.about-margin {
+position: relative;
+width:100%;
+padding:0px;
+}
+
+iframe {
+	position: absolute;
+	height: 100%;
+	min-height: auto;
+	max-height: none;
+	width: 66.66667%;
+	right: 0;
+	left: auto;
+	transform: none;
+}
+
+#about p {
+	width: 46.66667%;
+	min-width: 560px;
+	bottom: 0;
+    padding: 60px 40px;
+    bottom: auto;
+    animation: fadeInUp;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-fill-mode: none;
+    color: #00B1B0;
+    z-index: 1;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.2);
+      color: #ff825d;
+      text-transform: uppercase;
+}
+
+/* Shop */
+#shop {
+	padding: 120px 0;
+	margin-bottom: 0;
+  width: 100%;
+}
+
+#shop h3 {
+  margin-bottom: -.5em;
+  margin-top: 36px;
+	font-size: 100px;
+  text-transform: uppercase;
+  color: #DEDED0;
+  line-height: 0.85;
+  width: 100%;
+  position: absolute;
+  left: 20%;
+  overflow: hidden;
+}
+
+.shop_list1, .shop_list2, .shop_list3 {
+  background-color: #252525;
+	width: 33%;
+	margin-right: 0px;
+  position: relative;
+  float: left;
+}
+
+/* Media queries */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .logo {
+       margin-top: 15px;
+       width: 100%;
+       position: relative;
+     }
+     nav {
+       margin-top: 10px;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       padding: 0 50px;
+       overflow: hidden;
+     }
+     nav li {
+       padding-bottom: 5px;
+     }
+
+   nav > ul {
+     width: 35vw;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
