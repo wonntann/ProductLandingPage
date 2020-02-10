@@ -5,6 +5,7 @@ padding: 0px;
 position: relative;
 margin: 0px;
 box-sizing: boarder-box;
+display: block;
 }
 
 .container {
@@ -20,7 +21,7 @@ text-align: center;
 
 section {
 background-color: #f9f9f8;
-padding-top: 120px;
+padding: 80px 0px;
 margin-bottom: 48px;
 }
 
@@ -39,12 +40,12 @@ margin-bottom: 48px;
 .hero-text {
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 15%;
   transform: translate(-50%, -50%);
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7);
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .hero-text h2 {
@@ -65,6 +66,7 @@ margin-bottom: 8%;
   cursor: pointer;
   text-transform: uppercase;
   color: #FFFFF0;
+  width: 25%;
 }
 
 .btn:hover {
@@ -73,10 +75,9 @@ margin-bottom: 8%;
 }
 
 input {
-  padding: 10px 25px;
-  width: 27%;
+  padding: 5px 10px;
+  width: 36%;
 }
-
 
 /* Header */
 header {
@@ -110,42 +111,40 @@ nav ul li {
 
 /* About */
 #about {
-    
-}
-
-.about-margin {
-position: relative;
+    z-index: -10;
+    position: relative;
 width:100%;
-padding:0px;
 }
 
 iframe {
 	position: absolute;
 	height: 100%;
-	min-height: auto;
-	max-height: none;
 	width: 66.66667%;
 	right: 0;
-	left: auto;
 	transform: none;
+	z-index: -1;
 }
 
 #about p {
 	width: 46.66667%;
-	min-width: 560px;
 	bottom: 0;
     padding: 60px 40px;
-    bottom: auto;
+    left: 0;
     animation: fadeInUp;
     animation-duration: 0s;
     animation-timing-function: ease;
     animation-fill-mode: none;
     color: #00B1B0;
-    z-index: 1;
-      background: rgb(0, 0, 0);
-      background: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+      background:#252525;
+      opacity: 50%;
       color: #ff825d;
-      text-transform: uppercase;
+      position: absolute;
+      margin: 0 auto;
+}
+
+#about p span {
+text-transform: uppercase;
 }
 
 /* Shop */
