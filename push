@@ -1,0 +1,69 @@
+[33mcommit a30baf7f3ed4efd9cc3f9b89efd4e515657c5cd3[m[33m ([m[1;32mmaster[m[33m)[m
+Author: wonntann <atpulley@gmail.com>
+Date:   Mon Feb 10 21:38:10 2020 -0800
+
+    push
+
+[1mdiff --git a/css/style.css b/css/style.css[m
+[1mindex 42d78c5..e4b5628 100644[m
+[1m--- a/css/style.css[m
+[1m+++ b/css/style.css[m
+[36m@@ -8,12 +8,12 @@[m [mbody {[m
+     box-sizing: border-box;[m
+     display: grid;[m
+ }[m
+[31m-[m
+[32m+[m[32m/*[m[41m [m
+ *,[m
+ *:before,[m
+ *:after {[m
+     box-sizing: inherit;[m
+[31m-}[m
+[32m+[m[32m} */[m
+ [m
+ .container {[m
+     font-family: Arial, Helvetica, sans-serif;[m
+[36m@@ -27,8 +27,8 @@[m [mbody {[m
+ section {[m
+     background-color: #f9f9f8;[m
+     padding: 80px 0px;[m
+[31m-    margin-bottom: 48px;[m
+[31m-[m
+[32m+[m[32m    margin-bottom: 0px;[m
+[32m+[m[32m    padding-bottom: 250px;[m
+ }[m
+ [m
+ /* Hero */[m
+[36m@@ -41,7 +41,7 @@[m [msection {[m
+     height: 80vh;[m
+ }[m
+ [m
+[31m-.hero::before {[m
+[32m+[m[32m.hero:before {[m
+     content: ' ';[m
+     display: inline-block;[m
+     vertical-align: middle;[m
+[36m@@ -125,7 +125,6 @@[m [mnav ul li {[m
+     position: relative;[m
+     width: 100%;[m
+     margin-bottom: 20px;[m
+[31m-    margin-top: 20px;[m
+ }[m
+ [m
+ .about-margin {[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 801af51..ece5683 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -37,9 +37,8 @@[m
+         <!-- About -->[m
+         <section id="about">[m
+             <div class="about-margin">[m
+[31m-                <iframe title="Video of pouring coffee" width="400" height="225" align="right" src="https://www.youtube.com/embed/zlvAcRFnYSQ" frameborder="0"[m
+[31m-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"[m
+[31m-                    allowfullscreen ></iframe>[m
+[32m+[m[32m                <iframe src="https://player.vimeo.com/video/216784812" width="740" height="460" frameborder="0"[m
+[32m+[m[32m                    allow="autoplay; fullscreen" allowfullscreen></iframe>[m
+             </div>[m
+             <p><span>Big positive changes are happening,</span>[m
+                 </br>[m

@@ -15,12 +15,12 @@ body {
   margin-left: -50vw;
   margin-right: -50vw;
 }
-
+/* 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
-}
+} */
 
 .container {
     font-family: Arial, Helvetica, sans-serif;
@@ -60,7 +60,12 @@ body {
 
 section {
     padding: 80px 0px;
+<<<<<<< HEAD
     margin-bottom: 48px;
+=======
+    margin-bottom: 0px;
+    padding-bottom: 250px;
+>>>>>>> push
 }
 
 /* Hero */
@@ -73,7 +78,7 @@ section {
     height: 80vh;
 }
 
-.hero::before {
+.hero:before {
     content: ' ';
     display: inline-block;
     vertical-align: middle;
