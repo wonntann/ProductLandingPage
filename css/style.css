@@ -59,8 +59,7 @@ body {
 } */
 
 section {
-    padding: 80px 0px;
-    margin-bottom: 48px;
+    padding: 40px 0px;
 }
 
 /* Hero */
@@ -73,7 +72,7 @@ section {
     height: 80vh;
 }
 
-.hero::before {
+.hero:before {
     content: ' ';
     display: inline-block;
     vertical-align: middle;
@@ -172,6 +171,12 @@ nav ul li {
     /* width: 66.66667%; */
 }
 
+.about-video {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+} 
+
 iframe {
     top: 50px;
     right: 100px;
@@ -183,8 +188,7 @@ iframe {
     animation-duration: 0s;
     animation-timing-function: ease;
     animation-fill-mode: none;
-    background: #252525;
-    opacity: 60%;
+    background: #FFFFF0;
     color: #ff825d;
     padding: 15px;
     width: 100%;
@@ -205,41 +209,21 @@ iframe {
 }
 }
 
-/* .shop::before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-} */
-.shop-container {
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-/*
 #shop h3 {
-    margin-bottom: -.5em;
-    margin-top: 36px;
     font-size: 100px;
     text-transform: uppercase;
     color: #DEDED0;
     line-height: 0.85;
-    width: 100%;
-    position: absolute;
-    left: 20%;
-    overflow: hidden;
 }
 
-.shop_list1,
-.shop_list2,
-.shop_list3 {
-    background-color: #252525;
-    width: 33%;
-    margin-right: 0px;
-    position: relative;
-    float: left;
-} */
+.products {
+    display: inline-block;
+}
+
+.shop-list1, .shop-list2, .shop-list3  {
+    list-style: none;
+    max-width: 80px;
+}
 
 /* Media queries */
 @media (max-width:800px) {
