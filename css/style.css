@@ -9,11 +9,11 @@ body {
     display: grid;
     background-color: #f9f9f8;
     display: flex;
-    flex-flow: column;    
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+    flex-flow: column;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 *,
@@ -42,21 +42,21 @@ body {
 }
 
 .header-container {
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-.main-container {
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
 }
+
+/* .main-container {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 20px;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw; 
+} */
 
 section {
     padding: 80px 0px;
@@ -150,28 +150,35 @@ nav ul li {
     height: auto;
     left: 5%;
     position: absolute;
-} 
+}
 
 
 /* About */
 #about {
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
+    max-width: 1500px;
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-wrapper {
+    width: 60%;
+    height: 100px;
+    margin-bottom: 2%;
 }
 
 .about-margin {
-    width: 66.66667%;
-    z-index: -1;
+    /* width: 66.66667%; */
 }
 
 iframe {
-    position: absolute;
     top: 50px;
     right: 100px;
+    width: 100%;
 }
 
-#about p {
+.about-p {
     animation: fadeInUp;
     animation-duration: 0s;
     animation-timing-function: ease;
@@ -180,21 +187,22 @@ iframe {
     opacity: 60%;
     color: #ff825d;
     padding: 15px;
-    width: 50%;
+    width: 100%;
     height: auto;
     font-size: 18px;
 }
 
-#about p span {
+.about-p span {
     text-transform: uppercase;
-
     font-size: 40px;
 }
 
 /* Shop */
 #shop {
     background-color: #ff825d !important;
-    width: 100%;
+    max-width: 1500px;
+    padding: 20px 20px;
+}
 }
 
 /* .shop::before {
@@ -234,42 +242,6 @@ iframe {
 } */
 
 /* Media queries */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-moz-min-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {
-    .logo {
-        margin-top: 15px;
-        width: 100%;
-        position: relative;
-    }
-
-    nav {
-        margin-top: 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 50px;
-        overflow: hidden;
-    }
-
-    nav li {
-        padding-bottom: 5px;
-    }
-
-    nav>ul {
-        width: 35vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-
 @media (max-width:800px) {
     .hero-text {
         width: 40%;
