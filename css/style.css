@@ -20,11 +20,24 @@ body {
     text-align: center;
 }
 
+section {
+    padding-top: 20px;
+}
+
 .main-container {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #551a8b;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .row {
@@ -41,6 +54,8 @@ body {
 
 ul li {
     list-style-type: none;
+    display: inline;
+    padding: 10px;
 }
 
 /* Hero */
@@ -102,13 +117,14 @@ input {
 
 
 /* Header */
-header {
+#header {
     background-color: #FFFFF0;
     width: 100%;
     position: fixed;
-    bottom: 0;
+    top: 0;
     z-index: 1;
     margin: 0 auto;
+    height: 50px;
 }
 
 .header-container {
@@ -122,7 +138,6 @@ nav {
 
 nav ul {
     float: right;
-    padding-top: 4%;
 }
 
 nav ul li {
@@ -134,13 +149,13 @@ nav ul li {
 .logo {
     float: left;
     padding: 1%;
-    width: 8%;
+    width: 6%;
     height: auto;
 }
 
 
 /* About */
-#about-container {
+#about {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px 20px;
@@ -190,8 +205,7 @@ li img {
 
 .shop_list1,
 .shop_list2,
-.shop_list3
- {
+.shop_list3 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
@@ -225,10 +239,22 @@ li img {
     opacity: 0.7;
 }
 
+/* Contact */
+.contact {
+    line-height: 2em;
+    text-transform: uppercase;
+    color: #000;
+}
+
+
 /* Footer */
 .footer-container {
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.footer-container ul {
+    padding: 10px 0px;
 }
 
 
